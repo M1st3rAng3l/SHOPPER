@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: white;
+    --color2: #8bc34a;
+
+}
+
+.imgBanner{
+    width: 1903px;
+}
+
+.btnExplore{
+    font-family: 'Lato', sans-serif;
+    color: var(--color1);
+}
+
+.btnExplore{
+    border: 2px solid var(--color2);
+    background-color: var(--color2);
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+}
+.subBox{
+    display: grid;
+    grid-template-columns: repeat(1, 35em);
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+  
+
+}
+.eslogan{
+    color: var(--color1);
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+
