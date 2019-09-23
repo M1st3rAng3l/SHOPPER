@@ -1,22 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .headerBox{
-    border: 5px solid brown;
+    border: 1px solid gainsboro;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .titleBox{
-    display: flexbox;
-    justify-content: left;
-    justify-content: center;
+    margin-right: 10em;
+}
 
+
+.searchButton{
+    border: 5px solid #8bc34a;
+    background-color: #8bc34a;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.searchBar{
+    height: 25px;
+    width: 250px;
 }
 
 .navbarBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(9, 15em);
+    font-size: 10px;
     background-color: gainsboro;
-    border: 5px solid bisque;
+    border: 5px solid gainsboro;
+    padding-left: 7.5em;
+}
+
+.optionButton{
+    width: 50%;
+    height: auto;
+    border: none;
+    color: black;
+
+}
+.optionButton:hover{
+    border: 2px solid green;
+}
+
+span{
+    color:green;
+}
+
+.btnUP{
+    width: 125px;
+    height: 30px;
+    background-color: white;
+    color: #757575;
+    border: 2px solid #757575;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.imgLogo{
+    margin-top: 15px;
+    margin-left: 25px;
 }
