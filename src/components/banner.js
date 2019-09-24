@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgBaner from '../imagenes/Rectangle 3.png';
+import ImgBaner from '../imagenes/place1.png';
 import '../css/banner.css'
 
 function Banner(){
@@ -9,7 +9,7 @@ function Banner(){
                 <img src={ImgBaner} alt="banner" className="imgBanner"/>
                 <div className="subBox">
                 <h2 className="eslogan">Nosotros tenemos sueños para connectar a la mayoria a los Clientes independientes</h2>
-                <button type="submit" className="btnExplore">Explora</button>
+                <button type="submit" className="btnExplore">Explorar</button>
                 </div>
             </div>
         </div>

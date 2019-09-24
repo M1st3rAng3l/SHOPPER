@@ -22,14 +22,14 @@
     margin-right: 10em;
 }
 
-.title0ne .titleTwo .searchBar .searchButton{
+.searchBar .searchButton{
     font-family: 'Lato', sans-serif;
 }
 
 
 .searchButton{
-    border: 5px solid var(--color1);
-    background-color: var(--color1);
+    border: 5px solid var(--color2);
+    background-color: var(--color2);
     width: 100px;
     margin-top: 20px;
 }

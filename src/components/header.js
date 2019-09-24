@@ -2,6 +2,7 @@ import React from "react";
 import "../css/header.css";
 import logo1 from "../imagenes/Cart icon.svg";
 import logo2 from "../imagenes/shortlist icon.svg";
+import logo3 from '../imagenes/Logo.png'
 
 function HeaderOne() {
   return (
@@ -9,8 +10,7 @@ function HeaderOne() {
       <div className="headerBox">
 
         <div className="titleBox">
-          <h1 className="titleOne"><strong>SH<span>O</span>PPER</strong></h1>
-          <h3 className="titleTwo">Smart Marketplace</h3>
+          <img src={logo3} alt="logoPagina"/>
         </div>
 
         <div className="searchBox">
