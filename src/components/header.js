@@ -24,11 +24,9 @@ function HeaderOne() {
           <img src={logo2} alt="icon1" className="imgLogo"/>
           <img src={logo1} alt="logo2" className="imgLogo"/>
         </div>
-
       </div>
 
       <nav className="navbarBox">
-
           <button className="optionButton">Decoración del hogar</button>
           <button className="optionButton">Muebles</button>
           <button className="optionButton">Luces</button>
@@ -37,8 +35,7 @@ function HeaderOne() {
           <button className="optionButton">Exteriores</button>
           <button className="optionButton">Vacaciones</button>
           <button className="optionButton">Regalos</button>
-          <button className="optionButton">Eventos</button>
-        
+          <button className="optionButton">Eventos</button> 
       </nav>
     </div>
   );
