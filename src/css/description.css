@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainBoxClient{
+    border: 10px solid brown;
+    position: absolute;
+    top: 200%;
+}
+
+.sectionBuyer{
+    border: 6px solid green;
+
+}
+
+.sectionSeller{
+    border:6px solid yellow;
+}

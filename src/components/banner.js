@@ -8,7 +8,8 @@ function Banner(){
             <div className="mainBanner">
                 <img src={ImgBaner} alt="banner" className="imgBanner"/>
                 <div className="subBox">
-                <h2 className="eslogan">Nosotros tenemos sueños para connectar a la mayoria a los Clientes independientes</h2>
+                <h2 className="eslogan">Nosotros tenemos sueños para conectar a la mayoria a los Clientes independientes</h2>
+                <br/>
                 <button type="submit" className="btnExplore">Explorar</button>
                 </div>
             </div>

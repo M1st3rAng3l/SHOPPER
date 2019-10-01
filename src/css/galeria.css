@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.galleryBox{
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: absolute;
+    top: 300%;
+}

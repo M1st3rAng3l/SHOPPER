@@ -23,7 +23,7 @@ function TopSeller() {
       price: "1400.00",
       supplier: "Cyrsshare",
       description: "Una bicileta para ir en cualquier terreno montañosa",
-      quantity: "10",
+      quantity: "100",
       imagen: bike
     },
     {
@@ -32,7 +32,7 @@ function TopSeller() {
       price: "355.00",
       supplier: "Cobind pvt.",
       description: "Un bello banco para exteriores ",
-      quantity: "10",
+      quantity: "100",
       imagen: mueble
     },
     {
@@ -41,7 +41,7 @@ function TopSeller() {
       price: "555.00",
       supplier: "Intel Tech",
       description: "Un minidispositivo",
-      quantity: "10",
+      quantity: "100",
       imagen: tech
     }
   ];
@@ -49,7 +49,7 @@ function TopSeller() {
   return (
     <div>
       <div className="mainBox1">
-        <div className="">
+        <div className="titleTop">
           <img src={iconTop} alt="iconTitle" />
         </div>
         {products.map((e, index) => (

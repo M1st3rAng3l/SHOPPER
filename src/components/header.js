@@ -5,6 +5,7 @@ import logo2 from "../imagenes/shortlist icon.svg";
 import logo3 from '../imagenes/Logo.png'
 
 function HeaderOne() {
+  
   return (
     <div>
       <div className="headerBox">
@@ -21,7 +22,10 @@ function HeaderOne() {
         <div className="botonBox">
           <button className="btnUP">INICIAR SESION</button>
           <button className="btnUP">REGISTRARSE</button>
-          <img src={logo2} alt="icon1" className="imgLogo"/>
+        </div>
+        
+        <div className="iconBoton">
+        <img src={logo2} alt="icon1" className="imgLogo"/>
           <img src={logo1} alt="logo2" className="imgLogo"/>
         </div>
       </div>

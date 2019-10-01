@@ -3,39 +3,52 @@ import img1 from "../imagenes/bicicleta.png";
 import img2 from "../imagenes/joya.png";
 import img3 from "../imagenes/mueble.png";
 import img4 from "../imagenes/maquillaje.png";
+import img5 from "../imagenes/tech.png";
 import left from "../imagenes/left.png";
 import right from "../imagenes/right.png";
 import "../css/carousel.css";
 
 function Carousel() {
-  const images = [img1, img2, img4, img3];
-  const [currentImage, setcurrentImage] = useState(0);
+  const categories = [
+    { id: "00", name: "Joyeria", image: img1 },
+    { id: "01", name: "Muebles", image: img2 },
+    { id: "02", name: "Maquillaje", image: img3 },
+    { id: "03", name: "Equipo Deportivo", image: img4 },
+    { id: "04", name: "Hardware", image: img5 }
+  ];
+
+  const [currentCategory, setcurrentCategory] = useState(0);
 
   function prevIMage() {
-    //averiguar si currentImage es igual a 0 y si el usuario alcanzó el comienzo del carrusel
-    const resetToVeryBack = currentImage === 0;
-    const index1 = resetToVeryBack ? images.length - 1 : currentImage - 1;
+    //averiguar si currentCategory es igual a 0 y si el usuario alcanzó el comienzo del carrusel
+    const resetToVeryBack = currentCategory === 0;
+    const index1 = resetToVeryBack
+      ? categories.length - 1
+      : currentCategory - 1;
 
     // asigna el índice lógico al índice de imagen actual que se usará en el método de representación
-    setcurrentImage(index1);
+    setcurrentCategory(index1);
   }
 
   function nextImage() {
     // verifica si necesitamos comenzar desde el primer índice
-    const resetIndex = currentImage === images.length - 1;
-    const index2 = resetIndex ? 0 : currentImage + 1;
-    setcurrentImage(index2);
+    const resetIndex = currentCategory === categories.length - 1;
+    const index2 = resetIndex ? 0 : currentCategory + 1;
+    setcurrentCategory(index2);
   }
 
   // crea una nueva matriz con 4 elementos de las imágenes de origen
-  const ImageSources = images.slice(currentImage, currentImage + 4);
+  const categorySources = categories.slice(
+    currentCategory,
+    currentCategory + 4
+  );
 
   // verifica la longitud de la nueva matriz (es menor que 4 cuando el índice está al final de la matriz de fuentes imaginarias)
   const imageSourcesToDisplay =
-    ImageSources.length < 4
+    categorySources.length < 4
       ? // si la longitud de imageSourcesToDisplay es inferior a 4 imágenes que añaden las imágenes que faltan desde el comienzo de la matriz original
-        [...ImageSources, ...images.slice(0, 4 - ImageSources.length)]
-      : ImageSources;
+        [...categorySources, ...categories.slice(0, 4 - categorySources.length)]
+      : categorySources;
 
   return (
     <div>
@@ -47,13 +60,15 @@ function Carousel() {
           onClick={prevIMage}
         />
         {/* renderiza imagenes */}
-        {imageSourcesToDisplay.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt="imagesCollection"
-            className="imgCollection"
-          />
+        {imageSourcesToDisplay.map((e, index) => (
+          <div key={index}>
+            <img
+              src={e.image}
+              alt="imagesCollection"
+              className="imgCollection"
+            />
+            <h3>{e.name}</h3>
+          </div>
         ))}
         <img
           src={right}
