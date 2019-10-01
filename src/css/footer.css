@@ -5,7 +5,19 @@
 }
 
 .mainFooter{
-    border: 3px solid magenta;
     position: absolute;
-    top: 420%;
+    top: 455%;
+    width: 50em;
+    left: 25%;
+  
+}
+
+th{
+    width: 25em;
+    text-align: justify;
+}
+
+td{
+    text-align: justify;
+
 }

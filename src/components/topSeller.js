@@ -4,6 +4,7 @@ import bike from "../imagenes/bicicleta.png";
 import mueble from "../imagenes/mueble2.png";
 import glass from "../imagenes/lentes.png";
 import tech from "../imagenes/tech.png";
+import right from '../imagenes/right.png';
 import "../css/topSeller.css";
 
 function TopSeller() {
@@ -61,7 +62,7 @@ function TopSeller() {
             <p className="text">{e.description}</p>
           </div>
         ))}
-         <p>EXPLORAR MAS</p>
+         <p className="btnOption">EXPLORAR MAS<img src={right} alt="iconRight"/></p>
       </div>
      
     </div>

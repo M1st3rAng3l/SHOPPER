@@ -61,13 +61,13 @@ function Carousel() {
         />
         {/* renderiza imagenes */}
         {imageSourcesToDisplay.map((e, index) => (
-          <div key={index}>
+          <div key={index} className="imagenC">
             <img
               src={e.image}
               alt="imagesCollection"
               className="imgCollection"
             />
-            <h3>{e.name}</h3>
+            <h3 className="titleC">{e.name}</h3>
           </div>
         ))}
         <img

@@ -32,8 +32,8 @@ function Gallery(){
         {id:'09', imagen: img10, distribuidora:'Electra', name:'Mueble Elegante Fino', precio: '1345.75'},
         {id:'010', imagen: img11, distribuidora:'Sonic', name:'Gafas de Realidad Virtual', precio:'3350.55'},
         {id:'011', imagen: img12, distribuidora:'Electra', name:'Mueble Elegante Fino', precio: '1345.75'},
-        {id:'012', imagen: img13, distribuidora:'Nike', name:''},
-        {id:'013', imagen: img14,}
+        {id:'012', imagen: img13, distribuidora:'BeautyMX', name:'Cepillo para el Cabello', precio:'100'},
+        {id:'013', imagen: img14, distribuidora:'TechMX', name:'dispositivo SS', precio: '1300'}
     ]
     return(
         <div>
@@ -42,9 +42,9 @@ function Gallery(){
                     gallery.map((e,index) =>(
                         <div key={index} className="productBox">
                           <img src={e.imagen} alt="imgProduct"/>
-                          <h3>{e.distribuidora}</h3>
-                          <h3>{e.name}</h3>
-                          <h3>{e.precio}</h3>  
+                          <h3 className='text'>{e.distribuidora}</h3>
+                          <h3 className='text'>{e.name}</h3>
+                          <h3 className='text'>${e.precio}</h3>  
                         </div>
                     ))
                 }

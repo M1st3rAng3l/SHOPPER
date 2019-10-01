@@ -9,9 +9,10 @@ function Description() {
       <div className="mainBoxClient">
 
         <div className="sectionBuyer">
-          <h2>¿Por qué convertirse en Comprador</h2>
-          <br />
-          <p>
+          <div>
+          <h2 className="ttleB">¿Por qué convertirse en Comprador</h2>
+          <br/>
+          <p className="textD">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
             massa egestas mollis varius; dignissim elementum. Mollis tincidunt
             mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
@@ -20,15 +21,23 @@ function Description() {
             morbi nunc congue.
           </p>
           <br/>
-          <button>Aplicar para Comprar</button>
+          <button className="btnBS">Aplicar para Comprar</button>
+          </div>
+          <br/>
+        
+          <div className="imagenB">
           <img src={imgB} alt="imgBuyer"/>
+          </div>
         </div>
+        <br/>
+        <br/>
 
         <div className="sectionSeller">
-          <img src={imgV} alt="imgSeller"/>
-          <h2>¿Por qué convertirse en Vendedor?</h2>
+          <img src={imgV} alt="imgSeller" className="imagenS"/>
+          <div className="descS">
+          <h2 className="titleS">¿Por qué convertirse en Vendedor?</h2>
           <br/>
-          <p>
+          <p className="textD">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
             massa egestas mollis varius; dignissim elementum. Mollis tincidunt
             mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
@@ -37,7 +46,9 @@ function Description() {
             morbi nunc congue.
           </p>
           <br/>
-          <button>Aplicar para Vender</button>
+          <button className="btnBS">Aplicar para Vender</button>
+          </div>
+          <br/>
         </div>
 
       </div>

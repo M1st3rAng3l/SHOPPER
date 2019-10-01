@@ -12,27 +12,46 @@ function Footer(){
                 <footer className="mainFooter">
                     <table className="mainTable">
                         <tr>
-                            <th>CÃ³mo ayudamos</th>
+                            <th>¿Como ayudamos?</th>
                             <th>Conocernos</th>
                             <th>Unete a la comunidad</th>
-                            <th>SÃ­guenos</th>
+                            <th>Siguenos</th>
                         </tr>
 
                         <tr>
                             <td>Minoristas</td>
                             <td>Acerca de</td>
-                            <td>PrÃ³ximos Eventos</td>
+                            <td>Proximos Eventos</td>
                             <td><img src={icon1} alt="iconFace"/>Facebook</td>
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><img src={icon2} alt="iconPri"/></td>
+                            <td>Diseñadores de Interiores</td>
+                            <td>Politicas</td>
+                            <td>Convierte en un Comprador</td>
+                            <td><img src={icon2} alt="iconPri"/>Pinterest</td>
                         </tr>
+
+                        <tr>
+                            <td>Diseñadores de Productos</td>
+                            <td>Crreras</td>
+                            <td>Convierte en un Vendedor</td>
+                            <td><img src={icon3} alt="iconTwitter"/>Twitter</td>
+                        </tr>
+
+                        <td>mayoristas / importadores</td>
+                        <td>Prensa</td>
+                        <td></td>
+                        <td><img src={img4} alt="iconInstragram"/>Instragram</td>
                     </table>
+                    <br/>
+                    <hr/>
+                    <br/>
+                <p>2016 Uimint.com</p>
+                <p>Terminos & Condiciones</p>
+                <p>Privacidad</p>
                 </footer>
+               
             </div>
         </div>
     )
