@@ -10,10 +10,10 @@ import "../css/carousel.css";
 
 function Carousel() {
   const categories = [
-    { id: "00", name: "Joyeria", image: img1 },
-    { id: "01", name: "Muebles", image: img2 },
-    { id: "02", name: "Maquillaje", image: img3 },
-    { id: "03", name: "Equipo Deportivo", image: img4 },
+    { id: "00", name: "Joyeria", image: img2 },
+    { id: "01", name: "Muebles", image: img3 },
+    { id: "02", name: "Maquillaje", image: img4 },
+    { id: "03", name: "Equipo Deportivo", image: img1 },
     { id: "04", name: "Hardware", image: img5 }
   ];
 

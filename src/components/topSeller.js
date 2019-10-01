@@ -62,7 +62,10 @@ function TopSeller() {
             <p className="text">{e.description}</p>
           </div>
         ))}
-         <p className="btnOption">EXPLORAR MAS<img src={right} alt="iconRight"/></p>
+        
+         <p className="btnOption">EXPLORAR MAS </p>
+         <img src={right} alt="iconRight" className="btnRight"/>
+         
       </div>
      
     </div>
