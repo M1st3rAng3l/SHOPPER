@@ -31,15 +31,54 @@ function HeaderOne() {
       </div>
 
       <nav className="navbarBox">
-          <button className="optionButton">Decoración del hogar</button>
-          <button className="optionButton">Muebles</button>
-          <button className="optionButton">Luces</button>
-          <button className="optionButton">Acentos caseros</button>
-          <button className="optionButton">Alfombras</button>
-          <button className="optionButton">Exteriores</button>
-          <button className="optionButton">Vacaciones</button>
-          <button className="optionButton">Regalos</button>
-          <button className="optionButton">Eventos</button> 
+        <ul className="menu">
+          <li><button className="optionButton">Decoracion del hogar</button>
+          <ul className="subMenu">
+            <br/>
+            <div className="subTitleBox">
+              <h1><strong>Decoracion del Hogar</strong></h1>
+              <h2 className="subText">25478 objetos</h2>
+              <h1 className="slogan1">Crea y Vive tu estilo unico</h1>
+              <br/>
+              <hr/>
+            </div>
+            <br/>
+            
+          <li><button className="subOptionButton">Postres y Panes</button></li>
+            <li><button className="subOptionButton">Ollas de Presion</button></li>
+            <li><button className="subOptionButton">Herramientas de Cocina</button></li>
+            <li><button className="subOptionButton">Estufas de Gas</button></li>
+            <li><button className="subOptionButton">Comedor Y Servicio</button></li>
+            <li><button className="subOptionButton">Tazas de Cafe</button></li>
+            <li><button className="subOptionButton">Vajillas</button></li>
+            <li><button className="subOptionButton">Bar y Cristaler?a</button></li>
+            <li><button className="subOptionButton">Kitchen Storage</button></li>
+            <li><button className="subOptionButton">Lunch Boxes</button></li>
+            <li><button className="subOptionButton">Flasks & Casseroles</button></li>
+            <li><button className="subOptionButton">Kitchen Containers</button></li>
+            <li><button className="subOptionButton">Furniture</button></li>
+            <li><button className="subOptionButton">Beds</button></li>
+            <li><button className="subOptionButton">Sofas</button></li>
+            <li><button className="subOptionButton">Dinig tables & Sets</button></li>
+            <li><button className="subOptionButton">Mattresses</button></li>
+            <li><button className="subOptionButton">Tables</button></li>
+            <li><button className="subOptionButton">Chairs</button></li>
+            <li><button className="subOptionButton">Bean Bags</button></li>
+            <li><button className="subOptionButton">Shoe Racks</button></li>
+            <li><button className="subOptionButton">TV Units & Cabinets</button></li>
+            <li><button className="subOptionButton">Warddrones</button></li>
+          </ul>
+          </li>
+          <li> <button className="optionButton">Muebles</button></li>
+          <li> <button className="optionButton">Luces</button></li>
+          <li> <button className="optionButton">Acentos caseros</button></li>
+          <li><button className="optionButton">Alfombras</button></li>
+          <li> <button className="optionButton">Exteriores</button></li>
+          <li><button className="optionButton">Vacaciones</button></li>
+          <li><button className="optionButton">Regalos</button></li>
+          <li> <button className="optionButton">Eventos</button></li>
+        
+          </ul> 
       </nav>
     </div>
   );

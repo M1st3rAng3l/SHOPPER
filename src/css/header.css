@@ -1,10 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0 auto;
+    padding: 0 auto;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --color1: #8bc34a;
     --color2: #757575;
     --color3: gainsboro;
@@ -12,7 +12,7 @@
     --color5: black;
 }
 
-.headerBox{
+.headerBox {
     border: 1px solid var(--color3);
     display: flex;
     justify-content: space-around;
@@ -20,51 +20,107 @@
     width: auto;
 }
 
-.titleBox{
+.titleBox {
     margin-right: 10em;
 }
 
-.searchBar .searchButton{
+.searchBar .searchButton {
     font-family: 'Lato', sans-serif;
 }
 
 
-.searchButton{
+.searchButton {
     border: 5px solid var(--color2);
     background-color: var(--color1);
     width: 100px;
     margin-top: 10px;
 }
 
-.searchBar{
+.searchBar {
     height: 25px;
     width: 375px;
 }
 
-.navbarBox{
-    display: grid;
-    grid-template-columns: repeat(9, 15em);
-    font-size: 10px;
-    background-color: var(--color3);
-    border: 5px solid var(--color3);
+.navbarBox {
+    font-size: 0.5em;
+    background-color: gainsboro;
+    border: 5px solid gainsboro;
     padding-left: 7.5em;
 }
 
-.optionButton{
-    width: 50%;
-    height: auto;
-    border: none;
-    color: var(--color5);
+
+ul li {
+    list-style: none;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(9, 15em);
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.optionButton {
+    display: block;
+    color: #353535;
     font-family: 'Lato', sans-serif;
-
-
-}
-.optionButton:hover{
-    border: 2px solid var(--color4);
+    text-emphasis: none;
+    border: none;
 }
 
+.optionButton:hover {
+    cursor: pointer;
+}
 
-.btnUP{
+.subMenu {
+    position: absolute;
+    background-color:white;
+    width: 450%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+ 
+
+.menu li:hover .subMenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.subOptionButton{
+    border: none;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    justify-content: center;
+    padding: 15px;
+    color: #353535;
+    text-decoration: none;
+    background-color: white;
+    margin: 10px;
+}
+
+
+.subOptionButton:hover {
+    cursor: pointer;
+}
+
+
+.subTitleBox{
+    padding-top: 25px;
+    display: block;
+    justify-content: center;
+}
+
+hr{
+    border: 1px solid green;
+}
+
+.btnUP {
     width: 125px;
     height: 30px;
     background-color: white;
@@ -75,16 +131,20 @@
     margin-left: 20px;
 }
 
-.botonBox{
+.btnUp:hover{
+    cursor: pointer;
+}
+
+.botonBox {
     padding-top: 10px;
     padding-right: 10px;
     margin-right: 20px;
 }
 
-.iconBoton{
+.iconBoton {
     padding-top: 10px;
 }
 
-.imgLogo{
+.imgLogo {
     padding-left: 2em;
 }

@@ -6,9 +6,6 @@
 
 
 .galleryBox{
-    height: auto;
-    width: auto;
-    border: 2px solid blue;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -18,10 +15,9 @@
 }
 
 .productBox{
-    border: 2px solid cadetblue;
+    border: 2px solid #c6c6c5;
 }
 
 .text{
-    height: auto;;
-    width: auto;
+    font-family: 'Lato', sans-serif;
 }

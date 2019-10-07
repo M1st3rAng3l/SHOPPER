@@ -50,8 +50,13 @@ function Description() {
           </div>
           <br/>
         </div>
-
       </div>
+
+      <style jsx>
+        {`
+        
+        `}
+      </style>
 
     </div>
   );
