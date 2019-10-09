@@ -2,10 +2,11 @@ import React from "react";
 import "../css/header.css";
 import logo1 from "../imagenes/Cart icon.svg";
 import logo2 from "../imagenes/shortlist icon.svg";
-import logo3 from '../imagenes/Logo.png'
+import logo3 from '../imagenes/Logo.png';
+import SIGNUP from '../components/window';
 
 function HeaderOne() {
-  
+
   return (
     <div>
       <div className="headerBox">
@@ -15,13 +16,13 @@ function HeaderOne() {
         </div>
 
         <div className="searchBox">
-          <input type="text" placeholder="buscar productos" className="searchBar"/>
-          <button type="submit" className="searchButton">BUSCAR</button>
+          <input type="text" placeholder="buscar productos" className="searchBar" />
+          <button type="submit" className="searchButton" >BUSCAR</button>
         </div>
-
+        
         <div className="botonBox">
           <button className="btnUP">INICIAR SESION</button>
-          <button className="btnUP">REGISTRARSE</button>
+          <button className="btnUP"><SIGNUP/></button>
         </div>
         
         <div className="iconBoton">

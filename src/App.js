@@ -6,7 +6,9 @@ import TOPSELLER from './components/topSeller';
 import DESC from './components/description';
 import GALLERY from './components/galeria';
 import FOOTER from './components/footer';
+
 import './css/App.css'
+
 
 function App() {
   return (
