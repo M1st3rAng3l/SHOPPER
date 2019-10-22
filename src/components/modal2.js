@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SIGNUP from '../components/signup';
+import LOGIN from '../components/login';
 import '../css/modal.css';
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
@@ -8,7 +8,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
       <div className="modalBox1">
         <div className="modalHeader">
           <button type="button" className="modalButton" onClick={hide}>&times;</button>
-          <SIGNUP/>
+          <LOGIN/>
         </div>
       </div>
   </div>, document.body

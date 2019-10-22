@@ -16,16 +16,35 @@
     background-color: rgba(0,0,0,0.6); 
 }
 
-
+.buttonModal{
+    border: none;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
 
 .modalHeader{
     width: 550px ;
-    height: 710px;
-    border: 5px solid saddlebrown;
+    height: 750px;
+    border: 2px solid black;
+    border-radius: 5px;
     background-color: white;
 }
 
 .modalButton{
-   border: 5px solid darkblue;
+   border: none;
+   background: none;
+   display: flex;
+   position: relative;
+   left: 47%;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
 }
 
+
+.buttonModal:hover{
+    cursor: pointer;
+}
+
+.modalButton:hover{
+    cursor: pointer;
+}

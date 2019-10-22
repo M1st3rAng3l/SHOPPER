@@ -4,6 +4,7 @@ import logo1 from "../imagenes/Cart icon.svg";
 import logo2 from "../imagenes/shortlist icon.svg";
 import logo3 from '../imagenes/Logo.png';
 import SIGNUP from '../components/window';
+import LOGIN from '../components/window2';
 
 function HeaderOne() {
 
@@ -21,7 +22,7 @@ function HeaderOne() {
         </div>
         
         <div className="botonBox">
-          <button className="btnUP">INICIAR SESION</button>
+          <button className="btnUP"><LOGIN/></button>
           <button className="btnUP"><SIGNUP/></button>
         </div>
         

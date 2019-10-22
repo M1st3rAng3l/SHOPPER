@@ -1,5 +1,5 @@
 import React from 'react';
-import MODAL from './modal';
+import MODAL from './modal2';
 import useModal from './useModal';
 import '../css/modal.css';
 
@@ -9,7 +9,7 @@ function Window(){
     return(
        <div>
             <div>
-            <button className="buttonModal" onClick={toggle}>REGISTRARSE</button>
+            <button className="buttonModal" onClick={toggle}>INICIAR SESIÓN</button>
             <MODAL isShowing={isShowing} hide={toggle}></MODAL>
         </div>
        </div>

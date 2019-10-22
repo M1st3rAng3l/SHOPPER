@@ -7,12 +7,11 @@ import '../css/footer.css'
 
 function Footer(){
     return(
-        <div> 
-            <div>
+        <div>
                 <footer className="mainFooter">
                     <table className="mainTable">
                         <tr>
-                            <th>¿Como ayudamos?</th>
+                            <th>&#191;Como ayudamos?</th>
                             <th>Conocernos</th>
                             <th>Unete a la comunidad</th>
                             <th>Siguenos</th>
@@ -26,15 +25,15 @@ function Footer(){
                         </tr>
 
                         <tr>
-                            <td>Diseñadores de Interiores</td>
+                            <td>Dise&#241;adores de Interiores</td>
                             <td>Politicas</td>
                             <td>Convierte en un Comprador</td>
                             <td><img src={icon2} alt="iconPri"/>Pinterest</td>
                         </tr>
 
                         <tr>
-                            <td>Diseñadores de Productos</td>
-                            <td>Crreras</td>
+                            <td>Dise&#241;adores de Productos</td>
+                            <td>Carreras</td>
                             <td>Convierte en un Vendedor</td>
                             <td><img src={icon3} alt="iconTwitter"/>Twitter</td>
                         </tr>
@@ -52,7 +51,6 @@ function Footer(){
                 <p>Privacidad</p>
                 </footer>
                
-            </div>
         </div>
     )
 }
